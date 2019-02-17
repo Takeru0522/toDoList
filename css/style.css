@@ -1,0 +1,67 @@
+body {
+	text-align: center;
+
+}
+
+h1 {
+	
+}
+
+
+input {
+	margin: 10px 0;
+
+}
+
+
+.container {
+	background: #BCF7F0;
+	width: 305px;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 4px;
+
+}
+
+
+ul {
+	list-style: none;
+	width: 300px;
+	margin: 0 auto;
+
+}
+
+
+
+li {
+	
+	border: 1px solid #E4F5F3;
+
+	background: #9AEDE3;
+	position: flex;
+	justify-content: center;
+	position: relative;
+	left: -37px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
