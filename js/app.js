@@ -12,12 +12,35 @@ $('ul').prepend($item0);
 
 // };
 
-$('#button').on('click', () => {
-	const $value = $('#input').val();
+// $('#button').on('click', () => {
+// 	const $value = $('#input').val();
 
-  $('ul').append('<li>' + $value + '</li>');
+//   $('ul').append('<li>' + $value + '</li>');
+// })
+
+// const addBtn = document.getElementById('addBtn');
+// addBtn.addEventListener('click', function(){
+// 	console.log('btn is clicked');
+// })
+
+const ul = document.querySelector('ul')
+const input = document.getElementById('input')
+
+const btn = document.getElementById('btn');
+console.log(btn);
+btn.addEventListener('click', () => {
+	console.log('btn is clicked')
+	const val = input.value;
+	const li = document.createElement('li');
+	li.innerHTML = val;
+	ul.appendChild(li);
+	// ul.appendChild('<li>' + val + '</li>');
 })
 
+const remove = document.getElementById('remove');
+remove.addEventListener('click', () => {
+	ul.removeChild(ul.childNodes[0]);
+})
 
 // $('#remove').on('click', () => {
 // 	const $dying = $('li').eq(0);
