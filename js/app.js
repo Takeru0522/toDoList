@@ -28,11 +28,14 @@ const input = document.getElementById('input')
 
 const btn = document.getElementById('btn');
 console.log(btn);
+
 btn.addEventListener('click', () => {
 	console.log('btn is clicked')
+	
 	const val = input.value;
 	const li = document.createElement('li');
 	li.innerHTML = val;
+	li.setAttribute('class', 'list-group-item')
 	ul.appendChild(li);
 	// ul.appendChild('<li>' + val + '</li>');
 })
