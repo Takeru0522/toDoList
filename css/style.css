@@ -1,5 +1,6 @@
 body {
 	/*background-color: grey;*/
+	height: auto;
 
 }
 
@@ -12,8 +13,16 @@ body {
 	
 
 }
+.all::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.container-top {
 
 
+}
 .first_line {
 	height: auto;
 	width: 500px;
@@ -67,9 +76,10 @@ li {
 }
 
 
-.square {
+.design {
 	width: 200px;
 	height: 200px;
+	transform: rotate(45deg);
 	animation: pulse 5s infinite;
 	/*animation-timing-function: ease-out; */
 	/*animation-name: stretch;*/
@@ -90,22 +100,13 @@ li {
   	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.square {
+	position: relative;
+	left: 665px;
+	top: 205px;
+	height: 450px;
+	width: 450px;
+	background: linear-gradient(45deg, #1e5799 0%,#2989d8 0%,#42aaff 0%,#75ff3f 100%); 
+	transform: rotate(45deg);
+}
 
